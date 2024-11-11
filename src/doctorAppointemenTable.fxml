@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="doctorAppointemenTableController">
+   <children>
+      <TableView fx:id="docterAppointemetTable" prefHeight="200.0" prefWidth="762.0">
+        <columns>
+          <TableColumn fx:id="appIdTF" prefWidth="93.59997403621674" text="AppId" />
+          <TableColumn fx:id="firstNameTF" prefWidth="88.00000762939453" text="first name" />
+            <TableColumn fx:id="lastNameTF" prefWidth="95.20001220703125" text="last name " />
+            <TableColumn fx:id="phoneNumTF" prefWidth="124.79998779296875" text="phone number" />
+            <TableColumn fx:id="emailTF" prefWidth="93.5999755859375" text="Email" />
+            <TableColumn fx:id="addressTF" prefWidth="107.99996948242188" text="Address" />
+            <TableColumn fx:id="appointDateTF" prefWidth="159.20001220703125" text="Appointement date" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="backbtn" layoutX="4.0" layoutY="246.0" onAction="#onbackbtnhandler" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: #0f86d4;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

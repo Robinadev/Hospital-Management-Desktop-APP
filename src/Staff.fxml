@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #cfe8ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StaffController">
+   <children>
+      <TableView fx:id="stafftable" layoutX="18.0" layoutY="51.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="583.0">
+         <columns>
+            <TableColumn fx:id="staffidcol" prefWidth="75.0" text="StaffId" />
+            <TableColumn fx:id="firstnamecol" prefWidth="85.0" text="FirstName" />
+            <TableColumn fx:id="lastnamecol" prefWidth="76.0" text="LastName" />
+            <TableColumn fx:id="positioncol" prefWidth="76.0" text="Position" />
+            <TableColumn fx:id="phonenumbercol" prefWidth="94.0" text="PhoneNumber" />
+            <TableColumn fx:id="emailcol" prefWidth="97.0" text="Email" />
+         </columns>
+      </TableView>
+   
+      <TextField fx:id="addstaffidtf" layoutX="18.0" layoutY="358.0" prefHeight="26.0" prefWidth="135.0" promptText="staffid" />
+      <TextField fx:id="addfnametf" layoutX="18.0" layoutY="408.0" prefHeight="26.0" prefWidth="135.0" promptText="firstname" />
+      <TextField fx:id="addlastnametf" layoutX="18.0" layoutY="457.0" prefHeight="26.0" prefWidth="135.0" promptText="lastname" />
+      <TextField fx:id="addpostiontf" layoutX="279.0" layoutY="358.0" prefHeight="26.0" prefWidth="135.0" promptText="Position" />
+      <TextField fx:id="addphonetf" layoutX="279.0" layoutY="408.0" prefHeight="26.0" prefWidth="135.0" promptText="Phonenumber" />
+      <TextField fx:id="addemailtf" layoutX="279.0" layoutY="457.0" prefHeight="26.0" prefWidth="135.0" promptText="Email" />
+      <!-- <TextField fx:id="updatefnametf" layoutX="79.0" layoutY="357.0" prefHeight="25.0" prefWidth="117.0" promptText="fname" />
+      <TextField fx:id="updatelnametf" layoutX="229.0" layoutY="357.0" promptText="lname" />
+      <TextField fx:id="updatephonetf" layoutX="425.0" layoutY="357.0" promptText="phoneNumber" /> -->
+      <HBox layoutX="14.0" layoutY="3.0" prefHeight="40.0" prefWidth="591.0" style="-fx-background-color: #64C4ED;">
+         <children>
+            <Label text="STAFF MANAGENMENT" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="250.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <JFXButton fx:id="addBtn" layoutX="436.0" layoutY="455.0" onAction="#onaddBtnhandler" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: #64C4ED;" text="Add" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="searchBtn" layoutX="436.0" layoutY="284.0" onAction="#onsearchBtnhandler" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #64C4ED;" text="Search" textFill="WHITE" />
+      <TextField fx:id="searchnametf" layoutX="14.0" layoutY="284.0" prefHeight="26.0" prefWidth="403.0" promptText="Enter Name" />
+      <JFXButton fx:id="updateBtn" layoutX="436.0" layoutY="356.0" onAction="#OnUpdateBtnhandler" prefHeight="30.0" prefWidth="135.0" style="-fx-background-color: #64C4ED;" text="Update" textFill="WHITE" />
+
+      <JFXButton fx:id="removeBtn" layoutX="526.0" layoutY="744.0" onAction="#onremoveBtnhandler" style="-fx-background-color: #64C4ED;" text="Remove" textFill="WHITE" />
+      <TextField fx:id="deletestaffidtf" layoutX="331.0" layoutY="743.0" prefHeight="26.0" prefWidth="166.0" promptText="Enter StaffID" />
+      <JFXButton fx:id="backbtn" layoutX="14.0" layoutY="744.0" onAction="#onbackhandler" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #64C4ED;" text="Back" textFill="WHITE" />
+      <ImageView fitHeight="794.0" fitWidth="602.0" layoutX="698.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@staff.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

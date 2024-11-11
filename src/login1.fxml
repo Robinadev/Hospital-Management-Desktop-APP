@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane alignment="BASELINE_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegistarController">
+   <children>
+      <AnchorPane opacity="0.89" prefHeight="700.0" prefWidth="564.0" style="-fx-background-color: #B5C0D0;" StackPane.alignment="CENTER">
+         <children>
+            <FontAwesomeIconView fill="#2ca2e7" glyphName="%USER_PULS" layoutX="254.0" layoutY="86.0" size="7em" text="" />
+            <Label layoutX="177.0" layoutY="98.0" opacity="0.8" text="Regisrar account">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="Registar_username" labelFloat="true" layoutX="184.0" layoutY="248.0" opacity="0.77" prefHeight="26.0" prefWidth="199.0" promptText="Username">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="Registar_password" labelFloat="true" layoutX="184.0" layoutY="313.0" opacity="0.77" prefHeight="26.0" prefWidth="199.0" promptText="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <CheckBox fx:id="Registar_checkbox" layoutX="184.0" layoutY="401.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="199.0" text="Show Password">
+               <font>
+                  <Font size="18.0" />
+               </font></CheckBox>
+            <JFXButton fx:id="Registar_singupbtn" layoutX="181.0" layoutY="452.0" onAction="#Registar_singupbtn_handler" prefHeight="26.0" prefWidth="206.0" style="-fx-background-color: #0e50a1;" text="Sign Up" textFill="#bcbec1">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <FontAwesomeIconView glyphName="HOSPITAL_ALT" layoutX="289.0" layoutY="552.0" size="50px" text="">
+               <font>
+                  <Font size="56.0" />
+               </font>
+            </FontAwesomeIconView>
+            <Label layoutX="113.0" layoutY="580.0" prefHeight="30.0" prefWidth="227.0" text="Already hava an account ?">
+               <font>
+                  <Font size="20.0" />
+               </font></Label>
+            <Hyperlink fx:id="Registar_login" layoutX="355.0" layoutY="583.0" text="Login here">
+               <font>
+                  <Font size="15.0" />
+               </font></Hyperlink>
+            <JFXTextField fx:id="Registar_email" labelFloat="true" layoutX="184.0" layoutY="179.0" opacity="0.77" prefHeight="26.0" prefWidth="199.0" promptText="Email address">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

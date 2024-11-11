@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-image: url(&quot;72de670e096601c931226a7e28c80b1f.webp&quot;);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HMSLoginPageController">
+   <children>
+      <HBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="32.0" prefWidth="600.0" style="-fx-background-color: #98daf8;">
+         <children>
+            <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="83.0" prefWidth="601.0" style="-fx-background-color: #0094D4;" text="Hospital Management System" textFill="WHITE" wrapText="true" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Lucida Bright" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <ImageView fx:id="logImage" fitHeight="655.0" fitWidth="1299.0" VBox.vgrow="ALWAYS">
+         <image>
+            <Image url="@../../OBUZORLdEFO3HofPcHMa-1024x654.jpeg" />
+         </image>
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+      </ImageView>
+      <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="140.0" prefWidth="1300.0" spacing="200.0">
+         <padding>
+            <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+         </padding>
+         <children>
+            <Button fx:id="previousBtn" mnemonicParsing="false" onAction="#onPreviousBtn" text="&lt;" textFill="#1984e5">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="adminBtn" mnemonicParsing="false" onAction="#onAdminBtn" text="Admin" textFill="#1984e5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="doctorBtn" mnemonicParsing="false" onAction="#onDoctorBtn" text="Doctor" textFill="#1984e5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="patientBtn" mnemonicParsing="false" onAction="#onPatientBtn" text="Patient" textFill="#1984e5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="nextBtn" mnemonicParsing="false" onAction="#onNextBtn" text="&gt;" textFill="#1984e5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

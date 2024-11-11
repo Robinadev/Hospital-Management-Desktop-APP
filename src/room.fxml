@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #cfe8ff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="roomController">
+   <children>
+      <TableView fx:id="roomtable" layoutY="46.0" prefHeight="219.0" prefWidth="593.0">
+        <columns>
+          <TableColumn fx:id="rommnocol" prefWidth="104.0" text="RoomNumber" />
+          <TableColumn fx:id="capacitycol" prefWidth="133.0" text="Capacity" />
+            <TableColumn fx:id="statuscol" prefWidth="143.0" text="Status" />
+        </columns>
+      </TableView>
+      <HBox layoutX="2.0" layoutY="1.0" prefHeight="45.0" prefWidth="593.0" style="-fx-background-color: #64C4ED;">
+         <children>
+            <Label text="Room Mangement" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="230.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <JFXButton fx:id="serachBtn" layoutX="444.0" layoutY="272.0" onAction="#onsearchBtnhandler" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: #64C4ED;" text="Search" textFill="WHITE" />
+      <TextField fx:id="searchroomno" layoutX="19.0" layoutY="272.0" prefHeight="25.0" prefWidth="404.0" promptText="Enter Room Number" />
+      <JFXButton fx:id="addBtn" layoutX="221.0" layoutY="413.0" onAction="#onaddroomBtnhandler" prefHeight="26.0" prefWidth="173.0" style="-fx-background-color: #64C4ED;" text="AddRoom" textFill="WHITE" />
+      <TextField fx:id="addroomnotf" layoutX="26.0" layoutY="319.0" promptText="Enter Room Number" />
+      <TextField fx:id="addcapacitytf" layoutX="26.0" layoutY="365.0" promptText="Enter Capacity" />
+      <TextField fx:id="addstatustf" layoutX="26.0" layoutY="414.0" promptText="Enter Status" />
+      <JFXButton fx:id="editBtn" layoutX="472.0" layoutY="584.0" onAction="#oneditBtnhandler" prefHeight="26.0" prefWidth="123.0" style="-fx-background-color: #64C4ED;" text="EditRoom" textFill="WHITE" />
+      <TextField fx:id="editroomnotf" layoutX="245.0" layoutY="485.0" promptText="Enter Room Number" />
+      <TextField fx:id="editcapacitytf" layoutX="245.0" layoutY="534.0" promptText="Enter Capacity" />
+      <TextField fx:id="editstatustf" layoutX="245.0" layoutY="585.0" promptText="Enter Status" />
+      <JFXButton fx:id="removeBtn" layoutX="472.0" layoutY="758.0" onAction="#onremovebtnhandler" prefHeight="26.0" prefWidth="123.0" style="-fx-background-color: #64C4ED;" text="RemoveRoom" textFill="WHITE" />
+      <TextField fx:id="deleteroomnotf" layoutX="221.0" layoutY="758.0" prefHeight="26.0" prefWidth="174.0" promptText="Enter RoomNumber" />
+      <!-- <TextField fx:id="assignroomnotf" layoutX="110.0" layoutY="653.0" prefHeight="26.0" prefWidth="123.0" promptText="Enter RoomNumber" />
+      <TextField fx:id="assigndeptnametf" layoutX="251.0" layoutY="653.0" promptText="Enter DepartmentName" />
+      <JFXButton fx:id="assignBtn" layoutX="425.0" layoutY="653.0" onAction="#onassignBtnhandler" prefHeight="26.0" prefWidth="123.0" style="-fx-background-color: #64C4ED;" text="AssignRoom" textFill="WHITE" /> -->
+      <JFXButton fx:id="backBtn" layoutX="14.0" layoutY="759.0" onAction="#onbackbtnhandler" prefHeight="26.0" prefWidth="91.0" style="-fx-background-color: #64C4ED;" text="Back" textFill="WHITE" />
+      <ImageView fitHeight="800.0" fitWidth="652.0" layoutX="646.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@room.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
